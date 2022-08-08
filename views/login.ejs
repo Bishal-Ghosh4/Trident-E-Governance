@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/Style_of_login.css">
+    <!-- FontAwesome css -->
+    <script src="https://kit.fontawesome.com/71f72fec07.js" crossorigin="anonymous"></script>
+    <title>Login </title>
+</head>
+
+<body style="background-color: steelblue;">
+        <img src="/images/logo.jpg" alt="" srcset="" id="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#" style="padding-left:15px;font-size: 10px;">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"  style="font-size: 25px;letter-spacing: 3px;
+                    word-break: break-word;
+                    word-spacing: -6px;">
+                <ul class="navbar-nav" >
+                    <li class="nav-item">
+                        <a class="nav-link " style="color: burlywood;
+                        font-weight: bolder;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: bolder;" href="/login">Login In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;"href="/sign">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="/login" method="post">
+        <div class=img>
+            <img src="images/logo1.jpg" alt="">
+        </div>
+        <h1>Member Login </h1>
+        <i class="fas fa-user-alt icon"></i>
+        <input type="Username" name="username" class="input" placeholder="Username" required><br>
+        <i class="fas fa-user-lock icon"></i>
+        <input type="password" id="pass" class="input" name="password" placeholder="Password">
+        <span class="fas fa-eye" id="eyebtn"></span>
+        <br>
+        <button id="submit" class="btn btn-primary">Log In</button>
+        <button id="submit" class="btn btn-primary">Parents/Students Sign Up</button>
+        <br>
+    </form>
+        <span style="    color: blue;
+        font-size: 24px;
+        font-family: emoji;
+        cursor: pointer;;">Forget Password</span>
+    </div>
+    <!-- <section>
+       <h4>Trouble Logging In  ?</h4>
+       <ul>
+           <a href="#"><li>Problem in login?</li></a>
+           <a href="#"><li>Forget Password</li></a>
+           <a href="#"><li>Feedback</li></a>
+       </ul>
+   </section> -->
+</body>
+<script>
+    var eyebtn=document.getElementById("eyebtn");
+    var pass=document.getElementById('pass');
+    eyebtn.addEventListener('click',show_hide);    
+    
+    function show_hide(){
+      console.log("clicked here");
+      console.log(eyebtn.className);
+        if(eyebtn.className=='fas fa-eye'){
+            pass.type="text";
+            eyebtn.className='fas fa-eye-slash';
+        }
+        else{
+            pass.type="password";
+            eyebtn.className='fas fa-eye';
+        }    
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>

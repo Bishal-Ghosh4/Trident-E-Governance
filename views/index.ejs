@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/Style_of_sign.css">
+          <!-- FontAwesome css -->
+    <script src="https://kit.fontawesome.com/71f72fec07.js" crossorigin="anonymous"></script>
+    <title>Sign up</title>
+
+</head>
+
+<body>
+    <img src="images/logo.jpg" alt="" srcset="" id="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#" style="padding-left:15px;font-size: 10px;">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"  style="font-size: 25px;letter-spacing: 3px;
+                    word-break: break-word;
+                    word-spacing: -6px;">
+                <!-- style="padding-left: 1130px;font-size: 25px;"> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  style="color: burlywood;
+                        font-weight: bolder;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;"  href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;" href="/login">Login In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: bolder;" href="/">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>Sign Form</header>
+        <%if(msg){%>
+          <%=msg%>
+          <%}%>
+        <form action="/sign" method="POST">
+            <label for="fname" class="forlabel">First name:</label>
+                <input type="text" required class="field" id="fname" name="fname" placeholder="  First name"><br><br>
+            <label for="lname"class="forlabel">Last name:</label>
+                <input type="text" class="field" id="lname" name="lname" placeholder="  Last name"><br><br>
+            <label for="lname"class="forlabel">Email id:</label>
+                <input type="email" class="field" id="lname" name="email" placeholder="  Email"><br><br>
+            <label for="lname" class="forlabel">Username:</label>
+                <input type="text" class="field" id="lname" name="username" placeholder="  Username">
+                <span class="fas fa-eye" id="eyebtn"></span><br><br>
+            <label for="lname" class="forlabel">Password:</label>
+                <input type="password" class="field" id="pass" name="password" placeholder="  Password"><br><br>
+            <label for="lname" class="forlabel">10th Mark:</label>
+                <input type="number" class="field" id="lname" name="ten" placeholder="  Mark"><br><br>
+            <label for="lname" class="forlabel">12th Mark:</label>
+                <input type="number" class="field" id="lname" name="twelve" placeholder="  Mark"><br><br>
+                <label for="lname" class="forlabel">Phone no</label>
+                <input type="number" class="field" id="lname" name="no" placeholder="Phone no"><br><br>
+                
+            
+            <label for="lname" class="label">Branch:</label>
+                <select name="User Type" >
+                    <option selected>--Select One--</option>
+                    <option value="1">MECHNICAL</option>
+                    <option value="2">CIVIL</option>
+                    <option value="3">CSE</option>
+                    <option value="4">IT</option>
+                    <option value="5">ECE</option>
+                    <option value="6">EEE</option>
+                </select><br><br>
+            <label for="lname" class="label">User Type:</label>
+                <select name="User Type">
+                    <option selected>--Select One--</option>
+                    <option value="1">STUDENT</option>
+                    <option value="2">PARENT</option>
+            </select><br><br>
+            
+            <button id="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </div>
+</body>
+<script>
+    var eyebtn=document.getElementById("eyebtn");
+    var pass=document.getElementById('pass');
+    eyebtn.addEventListener('click',show_hide);    
+   
+    function show_hide(){
+      console.log("clicked here");
+      console.log(eyebtn.className);
+        if(eyebtn.className=='fas fa-eye'){
+            pass.type="text";
+            eyebtn.className='fas fa-eye-slash';
+        }
+        else{
+            pass.type="password";
+            eyebtn.className='fas fa-eye';
+        }    
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="/stylesheets/Style_of_sem.css">
+<!-- <script src="/javascripts/scprit.js"></script> -->
+
+<body>
+
+  <div class="con">
+    <a href="/account" id="back">Back to account</a>
+    <div class="box" >
+      <div class="header">
+        <h3>Carrer Details</h3>
+      </div>
+      <p>Registration NO: <span>1901289362</span> </p>
+      <p> Name: <span><%=fname%><%=lname%></span> </p>
+      <p> Semester: <span>4th</span> </p>
+
+      <p> Branch: <span>IT</span> </p>
+      <p>Course: <span>BTECH</span>
+      </p>
+
+      <p> 10th Marks: <span><%=ten%> %</span> </p>
+      <p> 12th Marks: <span><%=marks%> %</span> </p>
+      <button onclick="myFunction()">View Semester Result</button>
+    </div>
+    <div class="box" id="MyDiv">
+      <div class="header">
+        <h3>Semester Result</h3>
+      </div>
+     <p>Sgpa-1<span>8.68</span></p>
+     <p>Sgpa-2<span>9.35</span></p>
+     <p>Sgpa-3<span></span></p>
+     <p>Sgpa-4<span></span></p>
+     <p>Sgpa-5<span></span></p>
+     <p>Sgpa-6<span></span></p>
+     <p>Sgpa-7<span></span></p>
+     <p>Sgpa-8<span></span></p>
+     <p>Cgpa<span>9.05</span></p>
+ 
+    </div>
+
+
+  </div>
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("MyDiv");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+</script>
+
+</html>

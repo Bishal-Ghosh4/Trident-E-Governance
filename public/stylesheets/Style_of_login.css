@@ -1,0 +1,134 @@
+
+#logo
+{
+    width: 100%;
+    height: 185px; 
+    background-position: center;
+}
+.container-fluid{
+    background-color: rgb(26, 153, 226);
+    margin-top: -7px;
+}
+.container{
+    border: 2px solid blue;
+    background-color: lightyellow;
+    border-radius: 60px;
+    text-align: center;
+    width: 600px;
+    height: 545px;
+}
+.container .img{
+    width: 270px;
+    height: 180px;
+    margin: auto;
+    border-radius:50% ;
+}
+.img img{
+    height: 100%;
+    border-radius:50% ;
+}
+.container h1{
+    background: linear-gradient(165deg, blue,lightblue );
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.input{
+    height: 40px;
+    margin: 18px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    outline: none;
+}
+#eyebtn{
+    position: absolute;
+    top: 88%;
+    left: 56%;
+    cursor: pointer;
+}
+.btn {
+    height: 40px;
+    width: 220px;
+    margin-block: 20px;
+}
+section{
+    float: right;
+    width: 315px;
+    height: 200px;
+    right: 90px;
+    top: 400px;
+    border: 5px solid rgb(27, 214, 83);
+    border-radius: 20%;
+    text-align: center;    
+}
+section h4{
+    margin: 15px;
+}
+.container input{
+     border-radius: 20px;
+     color: #222;
+     font-size: 20px; 
+     font-family: 'Poppins';
+}
+.icon{
+    margin: -17px;
+}
+
+@media(max-width:1440px) {
+    #eyebtn{
+        top: 623px;
+        left: 818px;
+    }   
+}
+@media(max-width:1024px) {
+    #eyebtn{
+        top: 620px;
+        left: 611px;
+    }   
+}
+@media (max-width:768px) {
+    #eyebtn{
+        top: 602px;
+        left: 483px;
+    }
+}
+@media (max-width:600px){
+    
+    .container{
+        border: 2px solid blue;
+        background-color: lightyellow;
+        border-radius: 30px;
+        text-align: center;
+        width: 370px;
+        height: 626px;
+    }
+    #eyebtn{
+        top: 123%;
+        left: 68%;
+    }
+}
+@media(max-width:575px) {
+    #eyebtn{
+        left: 388px;
+        top: 599px;
+    }   
+}
+@media (max-width:425px) {
+    #eyebtn{
+        top: 595px;
+        left: 315px;
+    }
+}
+@media (max-width:320px) {
+    #logo
+    {
+        width: 116%;
+    }
+    #main_navbar{
+        width: 116%;
+    }
+    #eyebtn{
+        top: 595px;
+        left: 290px;
+    }  
+}

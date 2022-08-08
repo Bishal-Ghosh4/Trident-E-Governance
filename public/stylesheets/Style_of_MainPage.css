@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#logo
+{
+    width: 100%;
+    height: 185px; 
+}
+.container-fluid{
+    background-color: rgb(26, 153, 226);
+    margin-top: -7px;
+}
+.carousel-inner{
+    margin-top:-7px ;
+    
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+}
+/* THIS PART FOR MAIN CONTENT  */
+#maincontent{
+    position: relative;
+    background-image: url('/images/Trident-Top-View.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+#maincontent::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+    background: rgba(0,0,0,0.7);
+}
+#maincontent h2{
+    font-family: Permanent Marker;
+    font-size: 40px;
+    color: chartreuse;
+    font-weight: bold;
+}
+p{
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+
+}
+#college{
+    width: 90%;
+    height: 90%;
+    border-radius: 120px;
+}
+#library{
+    width: 90%;
+    height: 90%;
+    border-radius: 120px;
+    padding-left: 10px;
+}
+#hostel{
+    width: 90%;
+    height: 90%;
+    border-radius: 170px;
+}
+.logo{
+    padding-left: 270px;
+}
+.icondiv{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 350px;
+}
+.icons{
+    font-size: 40px;
+}
+@media (max-width:1024px){
+    .logo{
+        padding-left: 60px;
+    }
+    .icondiv{
+        padding-left: 0px;
+    }
+}
+@media (max-width:768px) {
+    .logo{
+        padding-left: 70px;
+    }
+    .icondiv{
+        padding-left: 0px;
+    }
+}
+@media (max-width:425px) {
+    .logo{
+        padding-left: 60px;
+    }
+    .icondiv{
+        padding-top: 10px;
+        justify-content: space-evenly;
+    }
+    .icons{
+        font-size: 30px;
+    }
+}

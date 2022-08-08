@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- FontAwesome css -->
+    <script src="https://kit.fontawesome.com/71f72fec07.js" crossorigin="anonymous"></script>
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="/stylesheets/Style_of_MainPage.css">
+    <!-- Javascript Library AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Trident E Governance</title>
+</head>
+
+<body>
+    <img src="/images/logo.jpg" alt="" srcset="" id="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#" style="padding-left:15px;font-size: 10px;">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 25px;letter-spacing: 3px;
+                    word-break: break-word;
+                    word-spacing: -6px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: bolder;" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;" href="/login">Login In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: burlywood;
+                        font-weight: bolder;" href="/sign">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/slide1.jpg" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slide6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="margin-bottom: -18%;" data-bs-interval="5000">
+                <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/transport.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slide5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- THIS PART FOR MAIN CONTENT -->
+    <div id="maincontent">
+        <hr class="featurette-divider">
+        <div style="position: relative; z-index: 1;">
+            <div class="row featurette">
+                <div class="col-md-7" data-aos="flip-left" style="padding-left: 30px; opacity:1; position: relative;">
+                    <h2 class="featurette-heading">COLLEGE </h2>
+                    <p class="lead">Trident Academy of Technology, a name that has become a brand in the field of
+                        technical
+                        education, is today synonymous with excellence.Trident is where Education meets Enthusiasm.
+                        Within
+                        just
+                        a few years of its establishment, Trident group of institutions has built an image amongst the
+                        aspiring
+                        masses which is worth the quality of education it imparts.At Trident we are passionate about
+                        grooming
+                        leaders who are not only thorough professionals but also are good human beings with values and
+                        “sanskars”<span id="collegepara" style="display: none;">Emphasis is given not only on making the
+                            students academically brilliant, but grooming them
+                            as true leaders and team players, thus preparing them for real life corporate world.</span>
+                    </p>
+                    <a class="btn btn-primary " id="read_more1" onclick="readmore1()">Read More</a>
+                </div>
+                <div class="col-md-5" data-aos="fade-left">
+                    <img src="images/slide7.jpg" alt="library" id="college">
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2" data-aos="flip-right" style="padding-left: 30px;">
+                    <h2 class="featurette-heading"> COLLEGE CENTRAL LIBRARY</h2>
+                    <p class="lead"> The college has a central library with all modern facilities. The library has 60000
+                        book
+                        volumes, 274 e-journals, 275 science direct and 25 IEEE articles. The library also provides
+                        e-learning
+                        facility, digital library, reading room and reference section. All the library operations have
+                        been
+                        computerized. <span id="librarypara" style="display: none;">Computerized Library Management
+                            includes search, indexing, issue/return records.Bar-coding of records are common and all
+                            book volumes are managed through bar-code readers.
+                            An in-house developed Library Management Package manages the indexing, issue and return
+                            records of books
+                            and journals. The library services of the institution are managed through the college
+                            intranet
+                            e-governance.Through intranet the students and faculties can access digital resources from
+                            institution library server. A scaling-up of the services to be accessed through internet is
+                            on in full-swing.</span>
+                    </p>
+                    <a class="btn btn-primary " id="read_more2" onclick="readmore2()">Read More</a>
+                </div>
+                <div class="col-md-5 order-md-1" data-aos="fade-right">
+                    <img src="images/2.jpg" alt="library" srcset="" id="library">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7" data-aos="flip-left" style="padding-left: 30px;">
+                    <h2 class="featurette-heading">HOSTEL</h2>
+                    <p>The college has three in-campus hostels with capacity of 1200 inmates. The
+                        rooms are spacious, well-furnished and duly maintained. Mess facility is provided for students.
+                        Hygienic
+                        vegetarian and non-vegetarian foods are provided to the students at a nominal rate. Incoming
+                        telephone
+                        facility is provided for the hostel.<span id="hostelpara" style="display: none;">There is a
+                            small
+                            library inside the hostel and is attached to a
+                            common room with TV facility. All the hostels have Wi-Fi coverage with a small computer room
+                            with
+                            internet connection. Hostel is provided with first aid kits and general medicines to take
+                            care
+                            of
+                            simple
+                            illness. A consulting room is available in the hostel. The college vehicle has been engaged
+                            to
+                            shift
+                            the
+                            sick to nearby hospitals in case of emergency. One pharmacist is always there to ensure
+                            medical
+                            facilities of students. Furthermore, the hostellers have access to the Central Library in
+                            the
+                            campus.
+                            The hostel is having a recreation hall which acts as a common room for the students with
+                            facilities
+                            for
+                            indoor games. Several news-papers and magazines are subscribed to the hostels. Audio visual
+                            facilities
+                            are also provided in the hall through television and audio systems. On the innovative front,
+                            Institute
+                            is planning to setup a rooftop solar system in hostels to provide warm water, to be used for
+                            various
+                            purposes.</span>
+                    </p>
+                    <a class="btn btn-primary " id="read_more3" onclick="readmore3()">Read More</a>
+                </div>
+                <div class="col-md-5" data-aos="fade-left">
+                    <img src="images/3.jpg" alt="hostel" srcset="" id="hostel" />
+                </div>
+
+            </div>
+            <hr class="featurette-divider">
+        </div>
+    </div>
+
+    <!-- THIS PART FOR FOOTER -->
+    <div class="footer_section" style="background-color: #474780">
+        <div class="inner_content">
+            <div class="row">
+                <div class="col-md-6 logo">
+                    <a href="#" title="Home" rel="home">
+                        <img src="https://tat.ac.in/wp-content/themes/tat/images/footer_logo.png" alt="Home"> </a>
+                </div>
+                <div class=" col-md-5 icondiv">
+                    <div>
+                        <a href="https://www.facebook.com/tridentcollege/" target="_blank"><i
+                                class="fab fa-facebook-f icons"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/919861191195" target="_blank"><i class="fab fa-whatsapp icons"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/trident.college/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram icons"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7" style="padding-left: 40px;">
+                    <div class="region region-footer-left">
+                        <div id="block-menu-menu-footer-menu" class="block block-menu">
+                            <h2 class="footer_heading" id="aboutus">ABOUT US</h2>
+                            <div class="content">
+                                <p class="footer_text">Trident Academy of Technology, a name that has become a brand in
+                                    the field of technical education, is today synonymous with excellence.Trident is
+                                    where Education meets Enthusiasm. Within just a few years of its establishment,
+                                    Trident group of institutions has built an image amongst the aspiring masses which
+                                    is worth the quality of education it imparts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" style="padding-left: 40px;">
+                    <div class="footer_cont">
+                        <div class="region region-footer-right">
+                            <div id="block-views-contact-us-details-block" class="block block-views">
+                                <h2 class="footer_heading">GET IN TOUCH</h2>
+                                <div class="content">
+                                    <div
+                                        class="view view-contact-us-details view-id-contact_us_details view-display-id-block view-dom-id-9c48124faf02e725e91d1ecda4ad6519">
+                                        <p class="footer_text">
+                                            <i class="fa fa-map-marker" aria-hidden="true"
+                                                style="margin-right:10px;"></i>
+                                            F-2, Chandaka Industrial Estate
+                                            In front of Infocity, Infocity
+                                            Chandrasekharpur, Bhubaneshwar
+                                            Odisha - 751024
+                                        </p>
+                                        <p class="footer_text"><i class="fa fa-envelope" aria-hidden="true"
+                                                style="margin-right:10px;"></i>info@trident.ac.in</p>
+                                        <p class="footer_text"><i class="fa fa-phone" aria-hidden="true"
+                                                style="margin-right:10px;"></i>0674-6649003, 6649008, 6649036,
+                                            0674-6649043</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center footer_copyright">© 2005-2021 TRIDENT All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var text = "Read Less";
+    var collegepara = document.getElementById('collegepara');
+    var read_more1 = document.getElementById('read_more1');
+    function readmore1() {
+        if (collegepara.style.display != 'inline') {
+            collegepara.style.display = 'inline';
+            read_more1.innerHTML = text;
+        }
+        else {
+            collegepara.style.display = 'none';
+            read_more1.innerHTML = "Read More";
+        }
+    }
+    var librarypara = document.getElementById('librarypara');
+    var read_more2 = document.getElementById('read_more2');
+    function readmore2() {
+        if (librarypara.style.display != 'inline') {
+            librarypara.style.display = 'inline';
+            read_more2.innerHTML = text;
+        }
+        else {
+            librarypara.style.display = 'none';
+            read_more2.innerHTML = "Read More";
+        }
+    }
+    var hostelpara = document.getElementById('hostelpara');
+    var read_more3 = document.getElementById('read_more3');
+    function readmore3() {
+        if (hostelpara.style.display != 'inline') {
+            hostelpara.style.display = 'inline';
+            read_more3.innerHTML = text;
+        }
+        else {
+            hostelpara.style.display = 'none';
+            read_more3.innerHTML = "Read More";
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<!-- AOS  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 2000,
+    });
+</script>
+</script>
+
+</html>

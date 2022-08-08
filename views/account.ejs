@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/stylesheets/Style_of_account.css">
+
+<body>
+   
+    <div class="con">
+        <div class="box">
+            <div class="header">
+                <h2>Profile</h2>
+            </div>
+<div class="photo">
+    <%if(img){%>
+    <img src="/uploads/<%=img.imagename%>" alt="">
+    <% }else{ %>
+        <img src="" alt="kamal">
+        <% } %>
+        <button><a href="/upload" style="color:white ;">Edit/Upload</a></button>
+  
+<h4><%=user%></h4>
+<button><a href="/logout" style="color:white ;">logout</a></button>
+
+</div>
+
+        </div>
+        <div class="box">
+            <div class="header">
+                <h2>Personal Activity Area</h2>
+            </div>
+            <div class="links">
+                <img src="/images/profile.jpg" alt="">
+                <h3><a href="/details">View Carrier Details</a></h3>
+            </div>
+            <div class="links">
+                <img src="/images/password.jpg" alt="">
+                <h3><a href="/changepass">Change password</a></h3>
+            </div>
+            <div class="links">
+                <img src="/images/phone.jpg" alt="">
+                <h3><a href="/changeno">Change phone no</a></h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="header">
+                <h2>Academics Area</h2>
+            </div>
+            <div class="links">
+                <img src="/images/result.jpg" alt="">
+                <h3><a href="/sem">Semester result</a></h3>
+            </div>
+            <div class="links">
+                <img src="/images/carrer.jpg" alt="">
+                <h3><a href="/carrer">Carrrer details</a></h3>
+            </div>
+            <div class="links">
+                <img src="/images/attendance.jpg" alt="">
+                <h3><a href="">Check Addtendance</a></h3>
+            </div>
+            <div class="links">
+                <img src="/images/sem.jpg" alt="">
+                <h3><a href="">Check Internal results</a></h3>
+            </div>
+          
+
+        </div>
+        <div class="box">
+            <div class="header">
+                <h2>Others Informantion</h2>
+            </div>
+                <div class="links">
+                    <img src="/images/notice.jpg" alt="">
+                    <h3><a href="">Notice</a></h3>
+                </div>
+                <div class="links">
+                    <img src="/images/library.jpg" alt="">
+                    <h3><a href="">Library Details</a></h3>
+                </div>
+                <div class="links">
+                    <img src="/images/acc.jpg" alt="">
+                    <h3><a href="">Account Details</a></h3>
+                </div>
+                <div class="links">
+                    <img src="/images/hostel.jpg" alt="">
+                    <h3><a href="">Hostel and transport</a></h3>
+                </div>
+               
+        </div>
+    </div>
+</body>
+
+</html>
